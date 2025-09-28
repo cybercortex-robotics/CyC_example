@@ -11,15 +11,15 @@
 DYNALO_EXPORT CyC_FILTER_TYPE DYNALO_CALL getFilterType()
 {
     CycDatablockKey key;
-    return CMonoCameraFilter(key).getFilterType();
+    return CCameraFilter(key).getFilterType();
 }
 
 DYNALO_EXPORT CCycFilterBase* DYNALO_CALL createFilter(const ConfigFilterParameters _params)
 {
-    return new CMonoCameraFilter(_params);
+    return new CCameraFilter(_params);
 }
 
-CMonoCameraFilter::CMonoCameraFilter(CycDatablockKey _key) :
+CCameraFilter::CCameraFilter(CycDatablockKey _key) :
     CCycFilterBase(_key),
     m_nDeviceID(0),
     m_bRectifyImages(false),
@@ -32,7 +32,7 @@ CMonoCameraFilter::CMonoCameraFilter(CycDatablockKey _key) :
     m_InputDataType = CyC_IMAGE;
 }
 
-CMonoCameraFilter::CMonoCameraFilter(ConfigFilterParameters _params) :
+CCameraFilter::CCameraFilter(ConfigFilterParameters _params) :
     CCycFilterBase(_params),
     m_nDeviceID(0),
     m_bRectifyImages(false),
@@ -57,7 +57,7 @@ CMonoCameraFilter::CMonoCameraFilter(ConfigFilterParameters _params) :
     }
 }
 
-CMonoCameraFilter::~CMonoCameraFilter()
+CCameraFilter::~CCameraFilter()
 {
     if (m_bIsEnabled)
         disable();
@@ -70,7 +70,7 @@ CMonoCameraFilter::~CMonoCameraFilter()
 #endif
 }
 
-bool CMonoCameraFilter::enable()
+bool CCameraFilter::enable()
 {
     if (!isNetworkFilter())
     {
@@ -144,7 +144,7 @@ bool CMonoCameraFilter::enable()
     return true;
 }
 
-bool CMonoCameraFilter::disable()
+bool CCameraFilter::disable()
 {
     //if (m_InterfaceType == MONO_CAMERA_ARDRONE_INTERFACE)
     //    CARParotDrone::instance().close();
@@ -166,7 +166,7 @@ bool CMonoCameraFilter::disable()
     return true;
 }
 
-bool CMonoCameraFilter::process()
+bool CCameraFilter::process()
 {
     // Update camera pose
     CPose pose;
@@ -206,7 +206,7 @@ bool CMonoCameraFilter::process()
     return true;
 }
 
-void CMonoCameraFilter::loadFromDatastream(const std::string& _datastream_entry, const std::string& _db_root_path)
+void CCameraFilter::loadFromDatastream(const std::string& _datastream_entry, const std::string& _db_root_path)
 {
 #ifndef __ANDROID_API__
     this->m_bIsProcessing = true;
@@ -248,7 +248,7 @@ void CMonoCameraFilter::loadFromDatastream(const std::string& _datastream_entry,
 #endif
 }
 
-int CMonoCameraFilter::StringToEnumType(const std::string& str_type)
+int CCameraFilter::StringToEnumType(const std::string& str_type)
 {
     if (str_type.compare("sim") == 0)
         return MONO_CAMERA_SIM_INTERFACE;

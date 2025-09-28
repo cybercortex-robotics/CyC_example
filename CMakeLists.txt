@@ -45,3 +45,4 @@ link_directories(${CyC_THIRD_PARTY_LIBRARY_DIRECTORIES})
 
 # Filters
 add_cyc_filter(Filter_HW_Camera src/Filter_HW_Camera)
+add_cyc_filter(Filter_Vision_BinarySegmentation src/Filter_Vision_BinarySegmentation)

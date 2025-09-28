@@ -16,7 +16,7 @@
 #include "vision/CImageDisplayUtils.h"
 #include "vision/CTriangulation.h"
 
-class CMonoCameraFilter : public CCycFilterBase
+class CCameraFilter : public CCycFilterBase
 {
 public:
     enum MonoCameraInterfaceType
@@ -30,9 +30,9 @@ public:
     };
 
 public:
-    explicit CMonoCameraFilter(CycDatablockKey _key);
-    explicit CMonoCameraFilter(ConfigFilterParameters _params);
-    ~CMonoCameraFilter() override;
+    explicit CCameraFilter(CycDatablockKey _key);
+    explicit CCameraFilter(ConfigFilterParameters _params);
+    ~CCameraFilter() override;
 
     bool enable() override;
     bool disable() override;
