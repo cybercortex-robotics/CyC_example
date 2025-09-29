@@ -1,4 +1,4 @@
-# CyC_example
+# CyC_example: How to use CyberCortex.AI
 
 <!-- markdownlint-disable first-line-h1 -->
 <!-- markdownlint-disable html -->
@@ -48,6 +48,6 @@ git submodule update --remote --init
 Configure the project in the cmake-gui utility. Enable the two local filters and the application inference core:
 
 <div align="center">
-  <img src="https://github.com/cybercortex-robotics/CyC_example/figures/cmake_filters_enable.png?raw=true" width="60%" alt="cmake_filters_enable" />
+  <img src="https://github.com/cybercortex-robotics/CyC_example/blob/main/figures/cmake_filters_enable.png?raw=true" width="60%" alt="cmake_filters_enable" />
 </div>
 
