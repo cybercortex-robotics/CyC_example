@@ -80,7 +80,7 @@ git submodule update --remote --init
 Configure the project in the cmake-gui utility. Enable the two local filters and the application inference core:
 
 <div align="center">
-  <img src="https://github.com/cybercortex-robotics/CyC_example/blob/main/figures/cmake_filters_enable.png?raw=true" width="20%" alt="cmake_filters_enable" />
+  <img src="https://github.com/cybercortex-robotics/CyC_example/blob/main/figures/cmake_filters_enable.png?raw=true" width="40%" alt="cmake_filters_enable" />
 </div>
 
 Reconfigure and generate the project.
@@ -115,5 +115,5 @@ In windows, start the datablock using the ```*.exe``` extension:
 The console will display the datablock:
 
 <div align="center">
-  <img src="https://github.com/cybercortex-robotics/CyC_example/blob/main/figures/datablock_cmd.png?raw=true" width="40%" alt="cmake_filters_enable" />
+  <img src="https://github.com/cybercortex-robotics/CyC_example/blob/main/figures/datablock_cmd.png?raw=true" width="60%" alt="cmake_filters_enable" />
 </div>
