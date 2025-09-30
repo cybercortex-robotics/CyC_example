@@ -16,7 +16,7 @@
   <a href="https://arxiv.org/abs/2409.01241"><b>Paper Link</b>👁️</a>
 </div>
 
-## 1. Introduction
+## Introduction
 
 <a href="https://www.cybercortex.ai/" target="_blank">CyberCortex.AI</a> is a lightweight real-time AI operating system designed for autonomous robots and complex automation. It operates directly on embedded hardware, enabling robots to process sensory data, perform decision-making, and execute actions efficiently.
 
@@ -29,7 +29,7 @@ In this example, we use four filters:
 | **Filter_HW_Camera** | 🌐 open-source | local | Acquires images from an USB, or integrated camera. |
 | **Filter_Vision_BinarySegmentation** | 🌐 open-source | local | Performs image segmentation on the input camera image. |
 | **Filter_Visualization_Sensing** | 🔒 proprietary | linux-gcc-x64 <br> linux-gcc-arm-x64 <br> <a href="https://www.cybercortex.ai/data/filters/Filter_Visualization_Sensing/win-msvc-x64/Filter_Visualization_Sensing.zip" target="_blank">win-msvc-x64</a> | Visualization of input and output filters results. |
-| **Filter_Comm_DataChannel** | 🔒 proprietary | linux-gcc-x64 <br> linux-gcc-arm-x64 <br> <a href="https://www.cybercortex.ai/data/filters/Filter_Comm_DataChannel/win-msvc-x64/Filter_Comm_DataChannel.zip" target="_blank">win-msvc-x64</a> | Communication between distributed DataBlocks and CyberCortex.AI Droids. |
+| **Filter_Comm_DataChannel** | 🔒 proprietary | linux-gcc-x64 <br> linux-gcc-arm-x64 <br> <a href="https://www.cybercortex.ai/data/filters/Filter_Comm_DataChannel/win-msvc-x64/Filter_Comm_DataChannel.zip" target="_blank">win-msvc-x64</a> | Communication between distributed DataBlocks (including CyberCortex.AI Droids). |
 
 ## Quick Start
 
@@ -112,8 +112,25 @@ In windows, start the datablock using the ```*.exe``` extension:
 ./App_CycCore.exe ../etc/datablocks/example.conf
 ```
 
-The console will display the datablock:
+The console will display the running datablock:
 
 <div align="center">
   <img src="https://github.com/cybercortex-robotics/CyC_example/blob/main/figures/datablock_cmd.png?raw=true" width="60%" alt="cmake_filters_enable" />
 </div>
+
+The output of each data block can be inspected by typing the number of the filter in the command line and pressing enter (under windows, press enter twice).
+
+## Citation
+```
+@article{CyberCortex_AI,
+  author = {Grigorescu, Sorin and Zaha, Mihai},
+  title = {CyberCortex.AI: An AI-based operating system for autonomous robotics and complex automation},
+  journal = {Journal of Field Robotics},
+  volume = {42},
+  number = {2},
+  pages = {474-492},
+  doi = {https://doi.org/10.1002/rob.22426},
+  url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/rob.22426},
+  year = {2025}
+}
+```
