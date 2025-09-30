@@ -32,6 +32,11 @@ In this example, we use four filters:
 | **Filter_Comm_DataChannel** | 🔒 proprietary | linux-gcc-x64 <br> linux-gcc-arm-x64 <br> <a href="https://www.cybercortex.ai/data/filters/Filter_Comm_DataChannel/win-msvc-x64/Filter_Comm_DataChannel.zip" target="_blank">win-msvc-x64</a> | Communication between distributed DataBlocks and CyberCortex.AI Droids. |
 
 ## Quick Start
+
+### Requirements⚒️
+
+
+
 ### Installation
 
 Install this repo in the following way:  
@@ -50,4 +55,8 @@ Configure the project in the cmake-gui utility. Enable the two local filters and
 <div align="center">
   <img src="https://github.com/cybercortex-robotics/CyC_example/blob/main/figures/cmake_filters_enable.png?raw=true" width="40%" alt="cmake_filters_enable" />
 </div>
+
+Reconfigure and generate the project.
+
+Download the binaries of the two proprietary filters using the links in the table above. Unzip and copy the binaries in the ``bin/filters`` folder (the two local filter should already be compiled there).
 
