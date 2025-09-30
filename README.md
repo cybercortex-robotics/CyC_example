@@ -35,6 +35,29 @@ In this example, we use four filters:
 
 ### Requirements⚒️
 
+CyberCortex.AI's requirements are the following libraries: Eigen, libconfig++, Msgpack, Octomap, OpenCV, SpdLog and Qt5.
+
+#### Dependencies instalation (using apt) ####
+
+```bash
+sudo apt install libopencv-dev libeigen3-dev libspdlog-dev libfmt-dev libconfig++-dev libmsgpack-dev liboctomap-dev
+sudo apt install qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools
+```
+
+#### Dependencies instalation (local) ####
+
+For better controlling the distributions of the dependencies, one can installed them localy in a ```3rdParty``` folder.
+Precompiled windows and linux dependencies are available for download:
+
+| Library         | Download link                        |
+|-----------------|--------------------------------------|
+| **Eigen**       | Linear algebra, matrix & vector math |
+| **libconfig++** | C++ configuration file parser      |
+| **Msgpack**     | Efficient binary serialization       |
+| **Octomap**     | 3D occupancy mapping                 |
+| **OpenCV**      | Computer vision & image processing   |
+| **SpdLog**      | Fast C++ logging library             |
+| **Qt5**         | GUI toolkit and application framework|
 
 
 ### Installation
