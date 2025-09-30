@@ -33,7 +33,7 @@ In this example, we use four filters:
 
 ## Quick Start
 
-### Requirements⚒️
+### Requirements ⚒️
 
 CyberCortex.AI's requirements are the following libraries: Eigen, libconfig++, Msgpack, Octomap, OpenCV, SpdLog and Qt5.
 
@@ -49,16 +49,20 @@ sudo apt install qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools
 For better controlling the distributions of the dependencies, one can installed them localy in a ```3rdParty``` folder.
 Precompiled windows and linux dependencies are available for download:
 
-| Library         | Download link                        |
-|-----------------|--------------------------------------|
-| **Eigen**       | Linear algebra, matrix & vector math |
-| **libconfig++** | C++ configuration file parser      |
-| **Msgpack**     | Efficient binary serialization       |
-| **Octomap**     | 3D occupancy mapping                 |
-| **OpenCV**      | Computer vision & image processing   |
-| **SpdLog**      | Fast C++ logging library             |
-| **Qt5**         | GUI toolkit and application framework|
+| Library         | Download link                                                     |
+|-----------------|-------------------------------------------------------------------|
+| **Eigen**       | https://drive.google.com/file/d/1-1MQH4B1fxEOehrdhlKT7QtG4shKSW7_ |
+| **libconfig++** | https://drive.google.com/file/d/1YtLF52m5gYgAU2kH8aKAvK5VP6x_C2Z2 |
+| **Msgpack**     | https://drive.google.com/file/d/1l78Y2wOy3Z-l7m0gChnFCZn8retwfeIh |
+| **Octomap**     | https://drive.google.com/file/d/1dFAx7jUxee-SYIMJihDT3ResKFOSiaym |
+| **OpenCV**      | https://drive.google.com/file/d/1PUKKQ_l6ADCthnZLO7LvmejRrpGc409J |
+| **SpdLog**      | https://drive.google.com/file/d/1w2M07evGCUo-6lrIs3M1G_vIiYWRxdXb |
+| **Qt5**         | https://drive.google.com/file/d/1LCaccGxOxVzrR9IJiHB4AGg5bGR8RxRh |
 
+Unzip all dependency files in a ```3rdParty``` folder.
+The link to the ```3rdParty``` folder has to be specified in the root ```CMakeLists.txt``` file of the project.
+
+When both local and system dependencies are installed, the local dependencies will be prefered.
 
 ### Installation
 
@@ -82,4 +86,22 @@ Configure the project in the cmake-gui utility. Enable the two local filters and
 Reconfigure and generate the project.
 
 Download the binaries of the two proprietary filters using the links in the table above. Unzip and copy the binaries in the ``bin/filters`` folder (the two local filter should already be compiled there).
+
+### Runtime
+
+In command line, go to the ```bin``` folder of the project.
+
+#### Windows specific ####
+
+Add the bin folders of your Qt5, opencv and libconfig++ libraries to the environment variables system path.
+Install the Qt5 dependencies by running:
+```bash
+windeployqt.exe App_CycCore.exe
+```
+
+#### Start the CyberCortex.AI DataBlock ####
+
+```bash
+./App_CycCore.exe ../etc/pipelines/vision.conf
+```
 
