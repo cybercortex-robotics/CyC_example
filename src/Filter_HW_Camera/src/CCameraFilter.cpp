@@ -75,7 +75,7 @@ bool CCameraFilter::enable()
     if (!isNetworkFilter())
     {
         // Get the pose data filter
-        m_pPoseDataFilter = CFilterUtils::getStateFilter(this->getInputSources());
+        m_pPoseDataFilter = CCycFilterUtils::getStateFilter(this->getInputSources());
         
         // Read the voxels file
         if (!m_CustomParameters["voxels"].empty())
@@ -170,7 +170,7 @@ bool CCameraFilter::process()
 {
     // Update camera pose
     CPose pose;
-    if (CFilterUtils::getPose(m_pPoseDataFilter, m_lastReadTsPose, pose))
+    if (CCycFilterUtils::getPose(m_pPoseDataFilter, m_lastReadTsPose, pose))
         this->m_pSensorModel->updatePose(pose * this->m_pSensorModel->extrinsics());
 
     cv::Mat frame;
@@ -214,7 +214,7 @@ void CCameraFilter::loadFromDatastream(const std::string& _datastream_entry, con
 
     // Update sensor pose
     CPose pose;
-    if (CFilterUtils::getPose(m_pPoseDataFilter, m_lastReadTsPose, pose))
+    if (CCycFilterUtils::getPose(m_pPoseDataFilter, m_lastReadTsPose, pose))
         this->m_pSensorModel->updatePose(pose * this->m_pSensorModel->extrinsics());
 
     csv::reader::row row;

@@ -9,7 +9,7 @@
 #include <opencv2/videoio.hpp>
 #include "CyC_TYPES.h"
 #include "CCycFilterBase.h"
-#include "os/CFilterUtils.h"
+#include "CCycFilterUtils.h"
 #include "sensors/CPinholeCameraSensorModel.h"
 #include <os/CCsvReader.h>
 #include "vision/CProjectiveGeometry.h"
