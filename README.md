@@ -41,6 +41,9 @@ CyberCortex.AI's requirements are the following libraries: Eigen, libconfig++, M
 
 ```bash
 sudo apt install libopencv-dev libeigen3-dev libspdlog-dev libfmt-dev libconfig++-dev libmsgpack-dev liboctomap-dev
+```
+QT libraries for visualization
+```bash
 sudo apt install qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools
 ```
 
