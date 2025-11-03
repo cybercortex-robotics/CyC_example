@@ -25,7 +25,7 @@ This repository illustrates how to use CyberCortex.AI in a straightforward robot
 In this example, we use four filters:
 
 | Component | License | Source | Notes |
-| :--- | :---: | ---: | :--- |
+| :--- | :---: | ------: | :--- |
 | **Filter_HW_Camera** | 🌐 open-source | local | Acquires images from an USB, or integrated camera. |
 | **Filter_Vision_BinarySegmentation** | 🌐 open-source | local | Performs image segmentation on the input camera image. |
 | **Filter_Visualization_Sensing** | 🔒 proprietary | <a href="https://www.cybercortex.ai/data/filters/Filter_Visualization_Sensing/linux-gcc-x64-ubuntu-24/Filter_Visualization_Sensing.zip" target="_blank">linux-gcc-x64 (ubuntu 24)</a> <br> linux-gcc-arm-x64 <br> <a href="https://www.cybercortex.ai/data/filters/Filter_Visualization_Sensing/win-msvc-x64/Filter_Visualization_Sensing.zip" target="_blank">win-msvc-x64</a> | Visualization of input and output filters results. |
