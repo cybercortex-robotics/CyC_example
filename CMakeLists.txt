@@ -36,9 +36,8 @@ set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/lib)
 
 # Include 3rdParty directories
 include_directories(${CyC_THIRD_PARTY_INCLUDE_DIRECTORIES})
-
-include_directories(CyC_inference/include)
-include_directories(CyC_inference/include/core)
+include_directories(CyC_inference/src/cyc_toolkit/src)
+include_directories(CyC_inference/src/cyc_core/src)
 
 # Include 3rdParty library directories
 link_directories(${CyC_THIRD_PARTY_LIBRARY_DIRECTORIES})
