@@ -33,6 +33,32 @@ In this example, we use four filters:
 
 ## Quick Start
 
+### Running the binaries
+
+Download the binaries from github Releases section.
+Unzip the content and
+```bash
+cd CyC_example
+```
+
+#### Linux specific ####
+
+Make the application executable:
+```bash
+chmod +x bin/App_CycCore
+```
+
+Install dependencies:
+```bash
+sudo apt install libopencv-dev libfmt-dev libconfig++-dev liboctomap-dev libopenh264-dev qtbase5-dev freeglut3 libqglviewer2-qt5
+```
+
+Go to the bin folder and run:
+```bash
+./run.sh
+```
+
+
 ### Requirements ⚒️
 
 CyberCortex.AI's requirements are the following libraries: Eigen, libconfig++, Msgpack, Octomap, OpenCV, SpdLog and Qt5.
