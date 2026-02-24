@@ -70,7 +70,7 @@ sudo apt install libopencv-dev libeigen3-dev libspdlog-dev libfmt-dev libconfig+
 ```
 QT libraries for visualization
 ```bash
-sudo apt install qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools
+sudo apt install freeglut3-dev qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools libqglviewer-dev-qt5
 ```
 
 #### Dependencies instalation (local) ####
