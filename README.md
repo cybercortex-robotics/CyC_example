@@ -50,7 +50,7 @@ chmod +x bin/App_CycCore
 
 Install dependencies:
 ```bash
-sudo apt install libopencv-dev libfmt-dev libconfig++-dev liboctomap-dev libopenh264-dev qtbase5-dev freeglut3-dev libqglviewer2-qt5
+sudo apt install libeigen3-dev libopencv-dev libfmt-dev libconfig++-dev liboctomap-dev libopenh264-dev qtbase5-dev freeglut3-dev libqglviewer2-qt5
 ```
 
 Go to the bin folder and run:
@@ -66,7 +66,7 @@ CyberCortex.AI's requirements are the following libraries: Eigen, libconfig++, M
 #### Dependencies instalation (using apt) ####
 
 ```bash
-sudo apt install libopencv-dev libeigen3-dev libspdlog-dev libfmt-dev libconfig++-dev libmsgpack-dev liboctomap-dev
+sudo apt install libeigen3-dev libopencv-dev libspdlog-dev libfmt-dev libconfig++-dev libmsgpack-dev liboctomap-dev
 ```
 QT libraries for visualization
 ```bash
